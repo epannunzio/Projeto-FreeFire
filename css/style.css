@@ -1,0 +1,176 @@
+body {
+	color: #b21aac;
+    background: url(images/fundo.jpg) no-repeat;
+    background-size:cover;
+    padding: auto;
+    padding-top: 75px;
+    
+}
+
+.img-logo {
+  width: 80%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(50vh); 
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards; 
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0); 
+    opacity: 1;
+  }
+}
+
+.sub-titulo {
+  transform: scale(0.2) translateY(50vh); 
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards; 
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0); 
+    opacity: 1;
+  }
+}
+
+.img-carousel {
+  height: 400px;
+  object-fit: cover;
+  object-position: 90% 0%;
+}
+
+.texto-logo {
+    font-family: 'Notable', sans-serif;
+    font-size: 100px;
+    color: #e5ab2a;
+    text-shadow: 3px 3px black;
+}
+
+.snake {
+  width: 400px;
+  box-shadow: 4px 2px black;
+}
+
+.navbar-brand {
+  font-family: 'Nosifer', cursive;  
+}
+
+h3, h4 {
+	text-transform: none;
+	font-family: 'Notable', sans-serif;
+	color: #e5ab2a;
+  text-shadow: 3px 3px black;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+	font-size: 1.75em;
+  font-family: 'Notable', sans-serif;
+  color: #e5ab2a;
+  text-shadow: 3px 3px black;
+  text-transform: none;
+}
+
+.booyah {
+  width: 250px;
+}
+
+.guns {
+  width: 700px;
+  box-shadow: 4px 2px black;
+}
+
+.contato-form input,
+.contato-form button {
+  display: block;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+}
+
+.contato-form input, textarea {
+  width: 50%;
+  margin-bottom: .8em;
+  padding: 8px 4px;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: 2px solid #ccc;
+}
+
+.contato-form button {
+  margin: 0 auto;
+  background: #c43228;
+  border: 0;
+  color: #fff;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+
+.contato a {
+    color: white;
+    font-size: 20px;
+    transition: text-shadow 2s;
+    text-decoration: inherit;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 20px yellow;
+    color: inherit;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+p {
+	line-height: 170%;
+	font-size:1.5em;
+    justify-content: center;
+    color: black;
+    background-color: rgba(240, 248, 255, 0.082);
+}
+
+a {
+	color: black;
+    font-size: 1em;
+	font-family: Times new roman, sans-serif;
+	text-decoration:none;
+}
+	
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;    
+    width: 100%;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
