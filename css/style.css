@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../images/fundo.gif) repeat;
+  padding-top: 75px;
+}
+
+.placa-welcome {
+  float: right;
+  position: relative;
+  bottom: 70px;
+  right: 50px;
+}
+
+@media (max-width: 768px) {
+    body {
+      background-size: 390px;
+      background-repeat: repeat-y;
+  }
+}
+
+.embed-container {
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  top: 0;
+  left: 0;
+  width: 900px;
+  height: 500px;
+} 
+
+@media (max-width: 768px) {
+  .embed-container iframe, .embed-container object, .embed-container embed {
+    width: 380px;
+    height: 400px;
+  }
+}
+
+.img-logo {
+  width: 80%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(50vh); 
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards; 
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0); 
+    opacity: 1;
+  }
+}
+
+.sub-titulo {
+  transform: scale(0.2) translateY(50vh); 
+  opacity: 0;
+  animation: 1s ease 500ms animacaoTitulo forwards; 
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0); 
+    opacity: 1;
+  }
+}
+
+.img-carousel {
+  height: 700px;
+  object-fit: cover;
+  object-position: 90% 0%;
+}
+
+.texto-logo {
+    font-family: 'Notable', sans-serif;
+    font-size: 100px;
+    color: #e5ab2a;
+    text-shadow: 3px 3px black;
+}
+
+.snake {
+  width: 400px;
+  box-shadow: 4px 2px black;
+}
+
+.navbar-brand {
+  font-family: 'Nosifer', cursive;  
+}
+
+h3, h4 {
+	text-transform: none;
+	font-family: 'Notable', sans-serif;
+	color: #e5ab2a;
+  text-shadow: 3px 3px black;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+	font-size: 3em !important;
+  font-family: 'Notable', sans-serif;
+  color: #e5ab2a;
+  text-shadow: 3px 3px black;
+  text-transform: none;
+}
+
+.booyah {
+  width: 250px;
+}
+
+.guns {
+  width: 700px;
+  box-shadow: 4px 2px black;
+}
+
+.ball {
+  color: #fff;
+  font-size: 17px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  bottom: 110px;
+  border-radius: 100%;
+  background-color: #28b4c4;
+  position: relative;
+  animation: changeColor 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example-one {
+  from {
+    background-color: #2871c4;
+  }
+
+  to {
+    background-color: rgb(4, 2, 102);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #2871c4;
+    left: 20px;
+    top: 0;
+  }
+
+  25% {
+    background-color:  rgb(4, 2, 102);
+    top: 50vh;
+    bottom: 0;
+    left: 20px;
+  }
+
+  50% {
+    background-color:  #2898c4;
+    top: 100vh;
+    bottom: 0;
+    left: 20px;
+  }
+
+  100% {
+    background-color:  rgb(4, 250, 217);
+    top: 200vh;
+    bottom: 0;
+    left: 20px;
+  }
+}
+
+.info-top-contato {
+  width: 100%;
+  height: 100px;
+}
+
+.contato-form input,
+.contato-form button {
+  display: block;
+}
+
+form {
+  margin: auto;
+  width: 50%;
+}
+
+.contato-form input, textarea {
+  width: 100%;
+  margin-bottom: .8em;
+  padding: 8px 4px;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: 2px solid #fff;
+  background-color: rgba(216, 191, 216, 0.603);
+}
+
+.contato-form button {
+  margin: 0 auto;
+  background: #c43228;
+  border: 0;
+  color: #fff;
+  width: 210px;
+  height: 38px;
+  font-size: 1.2em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+}
+
+.contato a {
+    color: white;
+    font-size: 20px;
+    transition: text-shadow 2s;
+    text-decoration: inherit;
+}
+
+.contato a:active,
+.contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 20px yellow;
+    color: inherit;
+}
+
+.contato .icons {
+  text-align: center;
+}
+
+p {
+	line-height: 170%;
+	font-size:1.5em;
+    justify-content: center;
+    color: #ccc;
+    background-color: rgb(44 41 111 / 93%);
+}
+
+a {
+	color: black;
+  font-size: 1em;
+	font-family: Times new roman, sans-serif;
+	text-decoration:none;
+}
+	
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 14px;    
+    width: 100%;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* modal */
+.modalWelcome {
+  display: none; /* esconde o modal por padrão */
+  position: fixed; /* posiciona o modal em relação à janela do navegador */
+  z-index: 1; /* define a ordem de empilhamento do modal */
+  left: 0;
+  top: 0;
+  width: 100%; /* define a largura do modal */
+  height: 100%; /* define a altura do modal */
+  overflow: auto; /* permite rolar o conteúdo do modal se ele for muito longo */
+  background-color: rgba(0,0,0,0.4); /* adiciona uma sobreposição escura por trás do modal */
+}
+
+.modal-content-welcome {
+  background-color: #f624813b; /* define a cor de fundo do modal */
+  margin: 15% auto; /* centraliza o modal verticalmente e alinha-o à esquerda horizontalmente */
+  padding: 20px;
+  width: 30%; /* define a largura do conteúdo do modal */
+  position: relative;
+  top: 120px;
+}
+
+.modal-content-welcome p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.close {
+  color: #4b971f; /* define a cor do botão fechar */
+  float: right; /* alinha o botão fechar à direita */
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+  bottom: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #ffc400;
+  text-decoration: none;
+  cursor: pointer;
+}
+
