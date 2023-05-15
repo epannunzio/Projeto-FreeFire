@@ -23,6 +23,12 @@ body {
   }
 }
 
+.info-home {
+  width: 50%;
+  background-color: #130f2c;
+  margin: 0 auto;
+}
+
 .embed-container {
   padding-bottom: 56.25%;
   overflow: hidden;
@@ -73,6 +79,9 @@ img {
   transform: scale(0.2) translateY(50vh); 
   opacity: 0;
   animation: 1s ease 500ms animacaoTitulo forwards; 
+  width: 700px;
+  display: flex;
+  justify-content: center;
 }
 
 @keyframes animacaoTitulo {
@@ -97,6 +106,12 @@ img {
     font-size: 100px;
     color: #e5ab2a;
     text-shadow: 3px 3px black;
+}
+
+.txt-blog {
+  width: 50%;
+  margin: 0 auto;
+  background-color: #130f2c;
 }
 
 .snake {
@@ -192,6 +207,12 @@ h2 {
   }
 }
 
+.contato {
+  background-color: #130f2c;
+  width: 50%;
+  margin: 0 auto;
+}
+
 .info-top-contato {
   width: 100%;
   height: 100px;
@@ -251,8 +272,7 @@ p {
 	line-height: 170%;
 	font-size:1.5em;
     justify-content: center;
-    color: #ccc;
-    background-color: rgb(44 41 111 / 93%);
+    color: #dfdfdf;
 }
 
 a {
